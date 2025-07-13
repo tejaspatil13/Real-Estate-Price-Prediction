@@ -3,8 +3,9 @@
 
 Predict the price of real estate properties based on various features such as location, area, number of bedrooms, etc. This project uses regression models to estimate housing prices and helps users make informed decisions.
 
-## 🔗 Live Demo / Project Link : real-estate-price-prediction-ml.netlify.app
+## 🔗 Live Demo / Project Link : 
 
+> 🔗 **Live Demo:** [Real Estate Price Prediction](https://real-estate-price-prediction-ml.netlify.app) 
 > 🔗 **GitHub Repository:** [Real Estate Price Prediction](https://github.com/tejaspatil13/RealEstatePricePrediction) 
 
 
