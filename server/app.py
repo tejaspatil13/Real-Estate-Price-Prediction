@@ -33,12 +33,11 @@
 
 
 from flask import Flask, request, jsonify
-import util
+from server import util  # ✅ Correct import
 
 app = Flask(__name__)
 
-# Load model/artifacts when the app starts
-util.load_saved_artifacts()
+util.load_saved_artifacts()  # ✅ Load model when app starts
 
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
@@ -66,3 +65,5 @@ def predict_home_price():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
+# ✅ No need for if __name__ == "__main__" when deploying with gunicorn
